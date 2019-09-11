@@ -1,0 +1,16 @@
+<span class="toggle-area" id="switch"></span>
+<h1 class="title" data-bind="text: title, attr:{style: title_style}"></h1>
+<h1 class="title2" data-bind="text: title2, attr:{style: title2_style}"></h1>
+
+<div data-bind="attr: {class: PositionAvailableClass}">
+    <div class="column range vertical-center">
+        <label orient='270deg' type='range' for="band" data-bind="attr: {before: MinValue, after: MaxValue}, text: CenterValue"></label>
+        <input type="range" orient='90deg' data-bind="attr: {min: MinValue, max: MaxValue, step: StepValue, style: slider_style}, value: Position" />
+        <label orient='90deg' type='range' for="band" data-bind="attr: {before: open_text, after: close_text}"></label>
+    </div>
+    <div class="column controls vertical-center">
+        <i id="up" class="up mdi mdi-chevron-up"></i>
+        <i id="pause" class="pause mdi mdi-pause"></i>
+        <i id="down" class="down mdi mdi-chevron-down"></i>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+widget_type: basetimer
+entity: {{entity}}
+fields:
+  title: {{title}}
+  days: ""
+  time: ""
+  days_text: "Day"
+  days_text_plural: "Days"
+  times_up_text: "Time Up!"
+  idle_text: "Idle"
+static_css:
+  title_style: $vacuum_title_style
+  days_style: $timer_days_style
+  time_style: $timer_time_style
+  widget_style: $timer_widget_style
+static_icons: []
+icons: []
+css: []

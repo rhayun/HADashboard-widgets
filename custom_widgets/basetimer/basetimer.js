@@ -79,7 +79,7 @@ function basetimer(widget_id, url, skin, parameters)
 	function startCountdown(self, state)
 	{
 		self.isRunning = true;
-		// console.log(state.attributes.remaining);
+
 		var lastUpdate = new Date(state.last_updated);
 		var secondsRemaining = hmsToSecondsOnly(state.attributes.remaining);
 		var minutesRemaining = secondsRemaining / 60;
@@ -100,7 +100,6 @@ function basetimer(widget_id, url, skin, parameters)
 			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 		  
 			time = formatTime(hours) + ":" + formatTime(minutes) + ":" + formatTime(seconds);
-			console.log(time);
 
 			if (days && days > 0) {
 				var days_text = self.parameters.fields.days_text;

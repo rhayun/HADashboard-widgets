@@ -17,3 +17,19 @@ salon_cover:
 ![HADashboard-widgets](https://github.com/rhayun/HADashboard-widgets/blob/master/images/with-slider.png?raw=true)
 
 ![HADashboard-widgets](https://github.com/rhayun/HADashboard-widgets/blob/master/images/without-slider.png?raw=true)
+
+
+### [A Timer widget for HADashboard](https://github.com/rhayun/HADashboard-widgets/tree/master/custom_widgets/basetimer)
+
+Timer widget for countdown
+
+```yaml
+timer1:
+  widget_type: timer
+  entity: timer.test
+  title: Timer
+  days_text: יום
+  days_text_plural: ימים
+  idle_text: לא פעיל
+  times_up_text: הזמן נגמר
+```
